@@ -1,19 +1,19 @@
 namespace TODO {
-  type GetTodosResponse = ITodo[];
-  type GetTodosRequest = void;
+  export type GetTodosResponse = ITodo[];
+  export type GetTodosRequest = void;
 
-  type PostTodoResponse = ITodo[];
-  type PostTodoRequest = ITodo;
+  export type PostTodoResponse = ITodo[];
+  export type PostTodoRequest = ITodo;
 
-  type EditTodoResponse = ITodo;
-  type EditTodoRequest = {
+  export type EditTodoResponse = ITodo;
+  export type EditTodoRequest = {
     _id: number;
     data: ITodo;
   };
 
-  type DeleteTodoResponse = ITodo[];
-  type DeleteTodoRequest = number;
+  export type DeleteTodoResponse = ITodo[];
+  export type DeleteTodoRequest = number;
 
-  type DeleteAllTodoResponse = ITodo[];
-  type DeleteAllTodoRequest = void;
+  export type DeleteAllTodoResponse = ITodo[];
+  export type DeleteAllTodoRequest = void;
 }

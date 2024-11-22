@@ -1,8 +1,8 @@
 namespace UPLOAD {
-  type UploadFileTodosResponse = {
+  export type UploadFileTodosResponse = {
     name: string;
     url: string;
     format: string;
   };
-  type UploadFileTodosRequest = FormData;
+  export type UploadFileTodosRequest = FormData;
 }
