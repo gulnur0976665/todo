@@ -9,6 +9,7 @@ import {
 } from "@/redux/api/todo";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useUploadFileMutation } from "@/redux/api/upload";
+import Image from "next/image";
 
 const ToDoList: FC = () => {
   const { register, handleSubmit, setValue } = useForm<ITodo>();
@@ -79,7 +80,7 @@ const ToDoList: FC = () => {
                 <div className="">
                   <h1>{el.title}</h1>
                   <h1>{el.description}</h1>
-                  {el.img && <img src={el.img} alt="image" />}
+                  {el.img && <Image src={el.img} alt="image" />}
                   <button onClick={() => deleteTodoMutation(el._id!)}>
                     remove
                   </button>
